@@ -1,0 +1,11 @@
+Adding user programs:
+1. Add source file to xv6 folder
+2. modify Makefile to include the program - add a line in UPROGS and EXTRA variables
+
+Adding system calls:
+1. usys.S - add SYSCALL(<function>) to assembly code
+2. syscall.h - Define system call number
+3. syscall.c - Map system call number to actual function
+4. sysproc.c - Implement the actual function
+5. user.h - Give the C function for the system call
+proc.c contains the internal functions that the system calls use
