@@ -1,0 +1,5 @@
+$ counter 2
+
+Counter with mutex lock 
+Data[0] = 20000
+
