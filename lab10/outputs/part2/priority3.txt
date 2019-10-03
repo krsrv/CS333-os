@@ -1,0 +1,38 @@
+$ priority3 10
+Priority of parent process = 1000 
+Exiting. pid=37, prio=5, AT=8291, IWT=0, FST=8291, ET=8408, RT=117, TWT=8291
+Exiting. pid=36, prio=5, AT=8291, IWT=117, FST=8408, ET=8527, RT=119, TWT=8408
+Exiting. pid=35, prio=5, AT=8291, IWT=236, FST=8527, ET=8645, RT=118, TWT=8527
+Exiting. pid=34, prio=5, AT=8290, IWT=355, FST=8645, ET=8762, RT=117, TWT=8645
+Exiting. pid=33, prio=5, AT=8290, IWT=472, FST=8762, ET=8878, RT=116, TWT=8762
+Exiting. pid=32, prio=5, AT=8290, IWT=588, FST=8878, ET=8994, RT=116, TWT=8878
+Exiting. pid=31, prio=5, AT=8289, IWT=705, FST=8994, ET=9110, RT=116, TWT=8994
+Exiting. pid=30, prio=5, AT=8289, IWT=821, FST=9110, ET=9226, RT=116, TWT=9110
+Exiting. pid=29, prio=5, AT=8289, IWT=938, FST=9227, ET=9343, RT=116, TWT=9227
+Exiting. pid=28, prio=5, AT=8288, IWT=1055, FST=9343, ET=9459, RT=116, TWT=9343
+
+All children completed
+Child 0.    pid 28
+Child 1.    pid 29
+Child 2.    pid 30
+Child 3.    pid 31
+Child 4.    pid 32
+Child 5.    pid 33
+Child 6.    pid 34
+Child 7.    pid 35
+Child 8.    pid 36
+Child 9.    pid 37
+
+Exit order 
+pid 37 
+pid 36 
+pid 35 
+pid 34 
+pid 33 
+pid 32 
+pid 31 
+pid 30 
+pid 29 
+pid 28 
+Exiting. pid=27, prio=1000, AT=8287, IWT=0, FST=8287, ET=9462, RT=8, TWT=9454
+
