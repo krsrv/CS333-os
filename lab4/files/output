@@ -1,0 +1,77 @@
+1. cmd:
+turtle$ cmd ls 
+.              1 1 512
+..             1 1 512
+README         2 2 2290
+cat            2 3 13436
+cmd            2 4 22160
+echo           2 5 12512
+forktest       2 6 8224
+grep           2 7 15264
+head           2 8 13896
+helloxv6       2 9 12236
+init           2 10 13104
+kill           2 11 12552
+ln             2 12 12464
+ls             2 13 14680
+mkdir          2 14 12580
+rm             2 15 12556
+sh             2 16 23204
+my_siblings    2 17 13752
+stressfs       2 18 13232
+usertests      2 19 56116
+wc             2 20 14092
+zombie         2 21 12288
+console        3 22 0
+turtle$ cmd echo Hello
+Hello
+turtle$ cmd ls | grep c
+cat            2 3 13436
+cmd            2 4 22160
+echo           2 5 12512
+wc             2 20 14092
+console        3 22 0
+turtle$ cmd head 3 README
+-- README --
+xv6 is a re-implementation of Dennis Ritchie's and Ken Thompson's Unix
+Version 6 (v6).  xv6 loosely follows the structure and style of v6,
+but is implemented for a modern x86-based multiprocessor using ANSI C.
+turtle$ 
+
+
+2. head
+turtle$ head 3 README
+-- README --
+xv6 is a re-implementation of Dennis Ritchie's and Ken Thompson's Unix
+Version 6 (v6).  xv6 loosely follows the structure and style of v6,
+but is implemented for a modern x86-based multiprocessor using ANSI C.
+turtle$ head 3 README README
+-- README --
+xv6 is a re-implementation of Dennis Ritchie's and Ken Thompson's Unix
+Version 6 (v6).  xv6 loosely follows the structure and style of v6,
+but is implemented for a modern x86-based multiprocessor using ANSI C.
+-- README --
+xv6 is a re-implementation of Dennis Ritchie's and Ken Thompson's Unix
+Version 6 (v6).  xv6 loosely follows the structure and style of v6,
+but is implemented for a modern x86-based multiprocessor using ANSI C.
+turtle$ 
+
+3. turtle$ helloxv6
+Hi! Welcome to the world of xv6!
+
+4. 
+turtle$ my_siblings 6 1 2 1 0 2 0
+32 RUNNING
+33 ZOMBIE
+34 RUNNABLE
+35 SLEEPING
+36 ZOMBIE
+37 SLEEPING
+turtle$ my_siblings 6 1 1 2 2 0 0
+40 RUNNING
+41 RUNNABLE
+42 ZOMBIE
+43 ZOMBIE
+44 SLEEPING
+45 SLEEPING
+

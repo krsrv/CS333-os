@@ -1,0 +1,24 @@
+1. Programs:
+ - ls lists all the files and folders in the current directory
+ - cat opens a file and reads its contents
+ - echo prints the arguments to the shell
+ - grep searches for a given pattern in a file
+ - init starts the sh process
+ - ln creates a symbolic link
+ - mkdir creates a folder
+ - rm deletes both files and folders
+ - sh starts the shell
+ - usertests runs some tests
+ - wc counts the words either in an interactive prompt or a file
+ - zombie creates a zombie process
+
+ wc and other user programs are compiled using the executable formed by compiling mkfs.c
+
+
+3.
+
+(a) usys.S - add SYSCALL(hello) to assembly code
+	user.h - add C function for system call, if need to define it in a separate file
+	syscall.h - Define system call number
+	syscall.c - Map system call number (defined in syscall.h) to actual function
+	sysproc.c - Implement the actual function
